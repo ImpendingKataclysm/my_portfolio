@@ -159,3 +159,4 @@ cython_debug/
 /portfolio/__init__.py
 /portfolio/apps.py
 /portfolio/migrations/__init__.py
+/productionfiles/
