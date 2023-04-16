@@ -156,3 +156,6 @@ cython_debug/
 /my_portfolio/settings.py
 /my_portfolio/urls.py
 /my_portfolio/wsgi.py
+/portfolio/__init__.py
+/portfolio/apps.py
+/portfolio/migrations/__init__.py
