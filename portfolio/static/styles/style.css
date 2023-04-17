@@ -112,6 +112,15 @@ body {
     min-height: 5rem;
 }
 
+.email-btn {
+    font-size: 1.1rem;
+    cursor: pointer;
+    background: #13132b;
+    color: #bbc3fb;
+    padding: 0.7rem 0.9rem;
+    border: none;
+}
+
 /* Adjust for smaller screens */
 @media screen and (max-height: 450px) {
     .sidebar {
