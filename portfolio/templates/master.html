@@ -7,13 +7,20 @@
     <link rel="stylesheet" href="{% static 'styles/style.css' %}">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
-    </nav>
-    {% block content %}
-    {% endblock %}
+    <div>
+        <nav id="nav-sidebar" class="sidebar">
+            <a id="nav-closebtn" href="javascript:void(0)" class="closebtn">&times;</a>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+        <main id="main-content">
+            <button id="nav-openbtn" class="openbtn">&#x2630; Menu</button>
+            {% block content %}
+            {% endblock %}
+        </main>
+    </div>
+<script src="{% static 'js/navbar.js' %}"></script>
 </body>
 </html>
