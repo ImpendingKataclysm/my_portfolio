@@ -3,5 +3,20 @@
 {% block title %}Contact{% endblock %}
 
 {% block content %}
-    <h1>Contact</h1>
+    <h1>Send me an email</h1>
+        <form method="post">
+            {% csrf_token %}
+            <div class="form-row">
+                <label for="sender_name">Your name: </label>
+                <input type="text" id="sender_name" name="sender_name">
+            </div>
+            <div class="form-row">
+                <label for="sender_email">Your email: </label>
+                <input type="text" id="sender_email" name="sender_email">
+            </div>
+            <div class="form-row">
+                <label for="message">Your message: </label>
+                <textarea id="message" name="message"></textarea>
+            </div>
+        </form>
 {% endblock %}
