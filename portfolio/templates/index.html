@@ -1,12 +1,9 @@
+{% extends 'master.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Katie Janzen</title>
-    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
-</head>
-<body>
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
     <div class="container">
         <div class="img-container">
             <img src="{% static 'images/photo.png' %}" alt="My picture">
@@ -18,5 +15,4 @@
             Vancouver, BC, and I'm studying web development and app development at BCIT.</p>
         </div>
     </div>
-</body>
-</html>
+{% endblock %}
