@@ -3,7 +3,8 @@
 {% block title %}Contact{% endblock %}
 
 {% block content %}
-    <h1>Send me an email</h1>
+    <div class="card email-form">
+        <h1>Send me an email</h1>
         <form method="post">
             {% csrf_token %}
             <div class="form-row">
@@ -19,4 +20,5 @@
                 <textarea id="message" name="message"></textarea>
             </div>
         </form>
+    </div>
 {% endblock %}
