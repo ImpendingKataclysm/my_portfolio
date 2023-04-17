@@ -4,12 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Katie Janzen</title>
+    <link rel="stylesheet" href="{% static 'styles/style.css' %}">
 </head>
 <body>
-    <h1>Katie Janzen</h1>
-    <p>Web App Developer</p>
-    <img src="{% static 'images/photo.png' %}" alt="My picture">
-    <p>Hello, I'm Katie and I code in Python, JavaScript, Java and C. I live in
-    Vancouver, BC, and I'm studying web development and app development at BCIT.</p>
+    <div class="container">
+        <div class="img-container">
+            <img src="{% static 'images/photo.png' %}" alt="My picture">
+        </div>
+        <div>
+            <h1>Katie Janzen</h1>
+            <p>Web App Developer</p>
+            <p>Hello, I'm Katie and I code in Python, JavaScript, Java and C. I live in
+            Vancouver, BC, and I'm studying web development and app development at BCIT.</p>
+        </div>
+    </div>
 </body>
 </html>
