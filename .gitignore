@@ -161,3 +161,5 @@ cython_debug/
 /portfolio/migrations/__init__.py
 /productionfiles/
 /portfolio/migrations/0001_initial.py
+/portfolio/migrations/
+/portfolio/secret.py
